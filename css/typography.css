@@ -1,0 +1,52 @@
+body {
+    font: 100%/1.5 "Fedra Sans Screen Regular",helvetica,arial,sans-serif;
+}
+article {
+    background: white;
+    overflow: hidden;
+    padding: 1em;
+}
+h1 {
+    font-family: "Charlie Bold",helvetica,arial,sans-serif;
+    margin: 0 0 1em;
+    max-width: 20em;
+    max-width: 70ch;
+}
+p {
+    margin: 1em 0;
+    max-width: 25em;
+    max-width: 60ch;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+p + p {
+    margin: -1em 0 1em;
+    text-indent: 2em;
+}
+
+b,
+em strong {
+    font-family: "Fedra Sans Screen Bold", helvetica, arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+em, i, q, cite {
+    font-family: "Fedra Sans Screen Italic", helvetica, arial, sans-serif;
+    font-style: italic;
+}
+strong {
+    font-family: "Fedra Sans Screen Bold Italic", helvetica, arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+code, pre, kbd {
+    font-family: "Fedra Mono Screen Regular";
+    font-weight: normal !important;
+}
+p > code, kbd {
+    border: 1px solid hsl(0, 0%, 87%);
+    background: hsl(0, 0%, 97%);
+    border-radius: 0.188em;
+    padding: 0 .2em;
+}
