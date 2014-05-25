@@ -1,6 +1,6 @@
 <!doctype html>
 <?php
-include '../parsedown/Parsedown.php';
+include '../includes/parsedown/Parsedown.php';
 $Parsedown = new Parsedown();
 $articleMain = file_get_contents('article.md', FILE_USE_INCLUDE_PATH);
 $articleAside = file_get_contents('aside.md', FILE_USE_INCLUDE_PATH);
