@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Figure 9 — The Form of the Book — Jan Tschichold</title>
+	<link rel="stylesheet" href="http://fonts.typotheque.com/WF-023273-006956.css">
+	<link rel="stylesheet" href="../css/typography.css">
+<style>
+html {
+    background-color: hsla(9,77%,65%,1) ;
+	background-image: url(../sketch/half-octavoformat.svg);
+	background-size: cover;
+}
+body {
+    margin: 19.2% 22.2% 33.3% 11.1%;
+    padding: 0;
+    background: hsla(343,69%,63%,1);
+}
+@media (max-width: 30em) {
+    body {
+        font-size: .8em;
+    }
+}
+
+</style>
+</head>
+<body>
+<article>
+    <h1>Figure 9 — Jan Tschichold</h1>
+    <p>
+        This is figure 9 from Jan Tschicholds book <cite>The Form of the Book</cite> as found in the Dutch translation on page 31. It's a ratio created by drawing lines on a 3:4 canvas. It's similar to <a href="../figure-7/">figure 7</a>, the top-margin is slightly smaller though.
+    </p>
+    <p>
+        These proportions are created for canvasses with a 3:4 ratio. This is a ratio that could exist on the web, but it is just as common as any other proportion. There are no default proportions on the web. In order to see what Tschichold's theories look like on the web I created this page, strictly using the ratios he describes, but applied in a fluid manner.
+    </p>
+    <p>
+        On the web some important geometry is lost. In the manuscript the width of the rose section is exactly the same as half the height of the paper. This is not possible to achieve on the web. I'm curious how Jan Tschichold would solve this.
+    </p>
+    <p>
+        While in the original manuscript the text in the middle was as wide as the white section we see here, I think this is inappropriate on the web: the measure gets too wide on wider screens which results in unreadable text. The <code>max-width</code> of the text is <code>60ch</code> wide, which is equal to 60 times the width of the zero.
+    </p>
+    <p>
+        This layout seems to <i>work</i> fine on most screens. The margin at the top might be too big on screens in landscape mode though. It seems to work better on portrait screens. On wider screens the white-space on the right, next to the text might disturb you though. You could increase the font-size in order to postpone that gap from happening.
+    </p>
+</article>
+</body>
+</html>
