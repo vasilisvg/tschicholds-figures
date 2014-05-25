@@ -4,7 +4,7 @@ This is an asymmetrical layout. The width of the two columns is as wide as the [
 
 The main column is *one part* wider and extends to the exact middle of the page, which seems like a natural place to align things with. The left top still aligns with a diagonal, as does the left bottom when you scroll all the way down. The `width` is `38.88%`.
 
-The second column is as wide as the original column. It touches the three original diagonal lines at the right top, and the two bottom corners. It has a `width` of `33.33%`.
+The second column is as wide as the original column. It touches the three original diagonal lines at the left and right top, and the bottom right corners. It has a `width` of `27.77%`.
 
 The margins on the whole page are the same as in the [classic book layout](../eighteen-1/). The difference is the margin between the wto columns. In all previous layouts it consisted of *two parts* (or 11.11% of the viewport width), in this case it's just *one part* (or 5.55% of the viewport width).
 
