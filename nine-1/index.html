@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nine blocks — researching Jan Tschicholds theory</title>
+	<link rel="stylesheet" href="../css/typgraphy.css">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../sketch/half-octavoformat.svg);
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+    background-position: 0 0;
+}
+div {
+    background: hsla(69,12%,89%,.1);
+    float: left;
+    width: 11.111111%;
+    height: 11.111111vh;
+    box-sizing: border-box;
+    border: solid grey;
+    border-width: 0 1px 1px 0;
+}
+div:nth-of-type(9n + 11),
+div:nth-of-type(9n + 12),
+div:nth-of-type(9n + 13),
+div:nth-of-type(9n + 14),
+div:nth-of-type(9n + 15),
+div:nth-of-type(9n + 16) {
+    background: hsla(228,46%,67%,1);
+}
+div:nth-last-of-type(-1n + 18) {
+    background: hsla(69,12%,89%,.1);
+}
+</style>
+</head>
+<body>
+<script>
+var i = 0;
+while (i < 135) {
+    document.write('<div></div>');
+    i++;
+}
+</script>
+</body>
+</html>
