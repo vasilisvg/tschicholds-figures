@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1000px" height="866px" viewBox="0 0 1000 866" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>octavoformat</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <rect id="Rectangle-1" stroke="#979797" fill="#D8D8D8" sketch:type="MSShapeGroup" x="0" y="0" width="1000" height="866"></rect>
+        <path d="M499.5,0.433054671 L499.5,865.688703" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <polygon id="Triangle-1" stroke="#979797" sketch:type="MSShapeGroup" points="500 0 1000 866 0 866 "></polygon>
+        <path d="M1000,0.470747562 L0.482625483,865.532503" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M666.6,0.427944091 L666.5,865.627939" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M0,0.473655324 L999.512195,865.523052" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M666.599096,0.514084507 L333.054035,289.003405" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <rect id="Rectangle-2" stroke="#979797" fill="#FFFFFF" sketch:type="MSShapeGroup" x="555" y="96" width="334" height="577"></rect>
+    </g>
+</svg>
