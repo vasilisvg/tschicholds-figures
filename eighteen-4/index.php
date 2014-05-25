@@ -24,7 +24,7 @@ body {
 }
 body:target,
 .flat {
-	background: hsla(315,52%,24%,1);
+	background: hsla(231,12%,55%,1);
 }
 
 article {
