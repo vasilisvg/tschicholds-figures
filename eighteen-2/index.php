@@ -24,18 +24,18 @@ body {
 }
 body:target,
 .flat {
-	background: hsla(3,53%,41%,1);
+	background: hsla(231,12%,55%,1);
 }
 
 article {
 	float: left;
 	margin: 11.1111vh 0% 22.2222vh 11.11111%;
-	width: 49.999999%;
+	width: 38.8888%;
 	box-sizing: border-box;
 	min-height: 66.66666vh;
 }
 article + article {
-	width: 16.66666%
+	width: 27.77777%
 }
 </style>
 </head>
@@ -54,7 +54,6 @@ include '../includes/toggleform.php';
 ?>
 
 </article>
-
 
 </body>
 </html>

@@ -4,62 +4,66 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Eighteen blocks — researching Jan Tschicholds theory</title>
-	<link rel="stylesheet" href="../css/typgraphy.css">
+	<link rel="stylesheet" href="http://fonts.typotheque.com/WF-023273-006956.css">
+	<link rel="stylesheet" href="../css/typography.css">
 <style>
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url(../sketch/full-octavoformat.svg);
-    background-size: 100% 100vh;
-    background-attachment: fixed;
-    background-position: 0 0;
+	margin: 0;
+	padding: 0;
+	background-color: #ebebeb;
+	background-image: url(../sketch/complete-octavoformat.svg);
+	background-size: 100% 100vh;
+	background-attachment: fixed;
+	background-position: 0 0;
 }
-div {
-    background: hsla(69,12%,89%,.1);
-    float: left;
-    width: 5.55555555%;
-    height: 5.55555555vh;
-    box-sizing: border-box;
-    border: solid grey;
-    border-width: 0 1px 1px 0;
+body:target,
+.flat {
+	background: hsla(315,52%,24%,1);
 }
-div:nth-of-type(18n + 39),
-div:nth-of-type(18n + 40),
-div:nth-of-type(18n + 41),
-div:nth-of-type(18n + 42),
-div:nth-of-type(18n + 43),
-div:nth-of-type(18n + 44),
 
-div:nth-of-type(18n + 47),
-div:nth-of-type(18n + 48),
-div:nth-of-type(18n + 49),
-div:nth-of-type(18n + 50),
-div:nth-of-type(18n + 51),
-div:nth-of-type(18n + 52)  {
-	background: hsla(228,46%,67%,1);
+article {
+	float: left;
+	margin: 11.1111vh 0% 22.2222vh 11.11111%;
+	width: 33.3333%;
+	box-sizing: border-box;
+	min-height: 66.66666vh;
 }
-div:nth-last-of-type(-1n + 72) {
-    background: hsla(69,12%,89%,.1);
-}
-img {
-	width: 50%;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	transform: scaleX(-1);
+article + article {
+
 }
 </style>
 </head>
-<body>
+<body id="g">
+
+<article>
+	<h1>Two columns</h1>
+	<p>This is the classic idea of a two page layout in a book. It's not very common on the web, since you mostly see irregular grids with a main column that's wider.</p>
+	<p>
+		It has a <code>margin-top</code> of <code>11.11vh</code>, a left and right margin of <code>11.11%</code>, and a <code>margin-bottom</code> of <code>22.222vh</code>. The width is <code>33.333%</code>. This corresponds to the layouts described in Tschicholds essays.
+	</p>
+	<p>
+		The big difference of course is that this is not a book. All Tschicholds ideas are based on the size of the paper, and there is no such thing as a fixed canvas on the web. Especially the height is flexible: pages usually become higher when the browser window gets smaller. In this excercise I used the viewport size as the size of the canvas.
+	</p>
+	<p>
+		If the content of this article is higher than the viewport, in other words, <em>if you have to scroll</em>, you'll see that the left-bottom of the article aligns with a diagonal. So the layout is not always <em>perfect</em>, but it is as perfect as it gets.
+	</p>
+</article>
+<article>
+	<h1>The second column</h1>
+	<p>
+		Of course we could assign <code>min-height: 66.666vh</code> to the article. This way an almost empty article will align with the diagonal.
+	</p>
+	<form action="#g">
+		<button id="toggle">Toggle background</button>
+	</form>
+
+</article>
+
 <script>
-var i = 0;
-while (i < 324) {
-    document.write('<div></div>');
-    i++;
+document.getElementById('toggle').onclick = function(e){
+	document.querySelector('body').classList.toggle('flat');
+	e.preventDefault();
 }
 </script>
-
 </body>
 </html>

@@ -1,8 +1,10 @@
 # Two asymmetrical columns
 
-This is clearly an asymmetrical layout. The main column is `16.66%` wider than the [common layout for a book](../eighteen-3/). The left top still aligns with a diagonal, as does the left bottom when you scroll all the way down. On the right it touches no significant line at all. It would be interesting to see if blocks that lack touch points look somehow *ugly*. Hard to tell.
+The [classic idea of a two page layout in a book](../eighteen-3/) is not common on the web. We also don't have the restriction of a fold in the middle of the two pages. We can use the whole width to lay our column out.
 
-The second column is `16.66%` less wide than the common book layout. It touches two diagonal lines: the right top, and the bottom right corners. This column too touches no significant line at all on the left.
+This is an asymmetrical layout. The main column is `5.55%` wider and extends to the exact middle of the page, which seems like a natural place to align things with. The left top still aligns with a diagonal, as does the left bottom when you scroll all the way down.
+
+The second column is `5.55%` less wide. It touches three diagonal lines: the right top, and the two bottom corners.
 
 The margins are the same as in the [classic book layout](../eighteen-3/). A `margin-top` of `11.11vh`, a left and right margin of `11.11%`, and a `margin-bottom` of `22.222vh`. The width is `33.333%`. This corresponds to the layouts described in Tschicholds essays.
 
