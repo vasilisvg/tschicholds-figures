@@ -30,7 +30,7 @@ body:target,
 article {
 	float: left;
 	margin: 11.1111vh 0% 22.2222vh 11.11111%;
-	width: 49.999999%;
+	width: 50%;
 	box-sizing: border-box;
 	min-height: 66.66666vh;
 }
