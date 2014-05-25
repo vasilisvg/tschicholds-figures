@@ -2,9 +2,9 @@
 
 This is an asymmetrical layout. The width of the two columns is as wide as the [classic book layout](../eighteen-1/), but in this case both columns have a different size.
 
-The main column is *one part* wider and extends beyond the middle of the page. It aligns with a diagonal on the second page, and with the diagonal help-line. The left top still aligns with a diagonal, as does the left bottom when you scroll all the way down. The `width` is `44.44%`.
+The main column is *two parts* wider and extends beyond the middle of the page. It aligns with a diagonal on the second page, and with the diagonal help-line. The left top still aligns with a diagonal, as does the left bottom when you scroll all the way down. The `width` is `44.44%`.
 
-The second column is *one part* less wide than the original column. It touches three diagonal lines at the right top, and the two bottom corners. It has a `width` of `33.33%`.
+The second column is *one part* less wide than the original column. It touches three diagonal lines at the right top, and the two bottom corners. It has a `width` of `27.77%`.
 
 The margins on the whole page are the same as in the [classic book layout](../eighteen-1/). The difference is the margin between the wto columns. In all previous layouts it consisted of *two parts* (or 11.11% of the viewport width), in this case it's just *one part* (or 5.55% of the viewport width).
 
