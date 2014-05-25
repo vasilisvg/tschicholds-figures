@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Eighteen blocks — researching Jan Tschicholds theory</title>
+	<link rel="stylesheet" href="../css/typgraphy.css">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../sketch/full-octavoformat.svg);
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+    background-position: 0 0;
+}
+div {
+    background: hsla(69,12%,89%,.1);
+    float: left;
+    width: 5.55555555%;
+    height: 5.55555555vh;
+    box-sizing: border-box;
+    border: solid grey;
+    border-width: 0 1px 1px 0;
+}
+div:nth-of-type(18n + 39),
+div:nth-of-type(18n + 40),
+div:nth-of-type(18n + 41),
+div:nth-of-type(18n + 42),
+div:nth-of-type(18n + 43),
+div:nth-of-type(18n + 44),
+div:nth-of-type(18n + 45),
+div:nth-of-type(18n + 46),
+
+div:nth-of-type(18n + 49),
+div:nth-of-type(18n + 50),
+div:nth-of-type(18n + 51),
+div:nth-of-type(18n + 52)  {
+	background: hsla(228,46%,67%,1);
+}
+div:nth-last-of-type(-1n + 72) {
+    background: hsla(69,12%,89%,.1);
+}
+img {
+	width: 50%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transform: scaleX(-1);
+}
+</style>
+</head>
+<body>
+<script>
+var i = 0;
+while (i < 324) {
+    document.write('<div></div>');
+    i++;
+}
+</script>
+
+</body>
+</html>
