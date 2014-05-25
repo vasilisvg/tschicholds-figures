@@ -1,3 +1,3 @@
 # The second column
 
-This column is probably too small for most content on most screen sizes.
+This column might be getting too small for some content on smaller screen sizes.

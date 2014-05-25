@@ -2,7 +2,7 @@
 
 This is clearly an asymmetrical layout. The main column is `11.11%` wider than the [common layout for a book](../eighteen-3/). It touches the diagonal for the *second* page in the top right corner. The left top still aligns with a diagonal, as does the left bottom when you scroll all the way down.
 
-The second column is `11.11%` less wide than the common book layout. It touches two diagonal lines: the right top, and the bottom right corners. On the left it touches an important line. I should find out what to call this line.
+The second column is `11.11%` less wide than the common book layout. It touches two diagonal lines: the right top, and the bottom right corners. On the left it touches an important vertical line. I should find out what to call this line. 
 
 The margins are the same as in the [classic book layout](../eighteen-3/). A `margin-top` of `11.11vh`, a left and right margin of `11.11%`, and a `margin-bottom` of `22.222vh`. The width is `33.333%`. This corresponds to the layouts described in Tschicholds essays.
 
