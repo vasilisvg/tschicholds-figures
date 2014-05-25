@@ -2,7 +2,7 @@
 
 The [classic idea of a two page layout in a book](../eighteen-1/) is not common on the web. We also don't have the restriction of a fold in the middle of the two pages. We can use the whole width to lay our column out.
 
-This is an asymmetrical layout. The main column is *one part* wider and extends to the exact middle of the page, which seems like a natural place to align things with. The left top still aligns with a diagonal, as does the left bottom when you scroll all the way down. The width is `38.88%`.
+This is an asymmetrical layout. The main column is *one part* wider and extends to the exact middle of the page, which seems like a natural place to align things with. The left top still aligns with a diagonal, as does the left bottom when you scroll all the way down. The `width` is `38.88%`.
 
 The second column is *one part* less wide. It touches three diagonal lines: the right top, and the two bottom corners. It has a `width` of `27.77%`.
 
