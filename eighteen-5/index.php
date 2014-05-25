@@ -50,18 +50,11 @@ echo $Parsedown->text($articleMain);
 <article>
 <?php
 echo $Parsedown->text($articleAside);
+include '../includes/toggleform.php';
 ?>
-	<form action="#g">
-		<button id="toggle">Toggle background</button>
-	</form>
 
 </article>
 
-<script>
-document.getElementById('toggle').onclick = function(e){
-	document.querySelector('body').classList.toggle('flat');
-	e.preventDefault();
-}
-</script>
+
 </body>
 </html>
