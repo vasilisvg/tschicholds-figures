@@ -75,6 +75,19 @@ article + article {
     border-width: 1px 1px 0;
     border-radius: .3em .3em 0 0 ;
 }
-article > pre {
+article > pre
+article > label {
     font-size: .85em;
+}
+#toggle-code + label + pre {
+    max-height: 0;
+    overflow: hidden;
+    border-width: 0;
+    transition: .3s;
+    margin: 0;
+}
+#toggle-code:checked + label + pre {
+    max-height: 21em;
+    margin: 1em 0;
+    border-width: 1px;
 }

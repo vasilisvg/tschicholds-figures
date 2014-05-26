@@ -17,6 +17,7 @@ $articleAside = file_get_contents('aside.md', FILE_USE_INCLUDE_PATH);
 <body id="g">
 
 <article id="col-left">
+<input type="checkbox" id="toggle-code"> <label for="toggle-code">Show the source code</label>
 <pre><code>body{
 	padding-top: <span id="pTop">1.111vh</span>;
 	padding-bottom: <span id="pBottom">2.222vh</span>;
