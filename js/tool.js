@@ -27,9 +27,12 @@ function adjustSize($this) {
             var marginUnit = '-1';
             var sizeUnit = '1';
         }
-        sizesArr = returnDimensions(marginOffset,sizeOffset,marginUnit,sizeUnit,vw,5.5555555);
+        sizesArr = returnDimensions(marginOffset,sizeOffset,marginUnit,sizeUnit,vw,5.5555);
         ml.style.marginLeft = sizesArr.split('+')[0]+'%';
         ml.style.width = sizesArr.split('+')[1]+'%';
+
+        document.querySelector($this.getAttribute('data-for') + '-left').innerHTML = Math.round(sizesArr.split('+')[0] * 1e4) / 1e4 +'%';
+        document.querySelector($this.getAttribute('data-for') + '-width').innerHTML = Math.round(sizesArr.split('+')[1] * 1e4) / 1e4 +'%';
     }
     if (direction === 'right') {
         marginOffset = window.getComputedStyle(ml,null).getPropertyValue("margin-right");
@@ -45,6 +48,9 @@ function adjustSize($this) {
         sizesArr = returnDimensions(marginOffset,sizeOffset,marginUnit,sizeUnit,vw,5.5555555);
         ml.style.marginRight = sizesArr.split('+')[0]+'%';
         ml.style.width = sizesArr.split('+')[1]+'%';
+
+        document.querySelector($this.getAttribute('data-for') + '-right').innerHTML = Math.round(sizesArr.split('+')[0] * 1e4) / 1e4 +'%';
+        document.querySelector($this.getAttribute('data-for') + '-width').innerHTML = Math.round(sizesArr.split('+')[1] * 1e4) / 1e4 +'%';
     }
     if (direction === 'top') {
         marginOffset = window.getComputedStyle(ml,null).getPropertyValue("padding-top");
@@ -61,6 +67,9 @@ function adjustSize($this) {
         sizesArr = returnDimensions(marginOffset,sizeOffset,marginUnit,sizeUnit,vh,11.1111111);
         ml.style.paddingTop = sizesArr.split('+')[0] + 'vh';
         //ml.style.minHeight = sizesArr.split('+')[1] + 'vh';
+
+        //nFixed = sizesArr.split('+')[0];
+        document.querySelector('#pTop').innerHTML = Math.round(sizesArr.split('+')[0] * 1e4) / 1e4  +'vh';
     }
     if (direction === 'bottom') {
         marginOffset = window.getComputedStyle(ml,null).getPropertyValue("padding-bottom");
@@ -76,6 +85,8 @@ function adjustSize($this) {
         }
         sizesArr = returnDimensions(marginOffset,sizeOffset,marginUnit,sizeUnit,vh,11.1111111);
         ml.style.paddingBottom = sizesArr.split('+')[0] + 'vh';
+
+        document.querySelector('#pBottom').innerHTML = Math.round(sizesArr.split('+')[0] * 1e4) / 1e4  +'vh';
         //ml.style.minHeight = sizesArr.split('+')[1] + 'vh';
         setTimeout(function(){
             window.scrollTo( 0, 100000 );

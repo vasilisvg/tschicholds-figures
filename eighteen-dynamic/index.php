@@ -17,6 +17,18 @@ $articleAside = file_get_contents('aside.md', FILE_USE_INCLUDE_PATH);
 <body id="g">
 
 <article id="col-left">
+<pre><code>body{
+	padding: 0 <span id="pTop">1.111vh</span> 0 <span id="pBottom">2.222vh</span>;
+}
+article {
+	margin: 0 <span id="col-left-right">0</span> 0 <span id="col-left-left">11.111%</span>;
+	width: <span id="col-left-width">33.333%</span>;
+}
+article + article {
+	margin: 0 <span id="col-right-right">0</span> 0 <span id="col-right-left">11.111%</span>;
+	width: <span id="col-right-width">33.333%</span>;
+}
+</code></pre>
 <?php
 echo $Parsedown->text($articleMain);
 ?>
