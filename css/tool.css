@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 11.1111vh 0 22.2222vh;
+    background-color: #ebebeb;
+    background-image: url(../sketch/complete-octavoformat.svg);
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+    background-position: 0 0;
+    transition: .3s;
+}
+body::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+body:target,
+.flat {
+    background: hsla(347,67%,41%,1);
+}
+
+article {
+    float: left;
+    margin: 0 0% 0 11.11111%;
+    width: 33.3333%;
+    box-sizing: border-box;
+    min-height: 66.66666vh;
+    position: relative;
+    transition: .3s;
+    padding: 3em;
+    overflow: hidden;
+}
+article + article {
+    margin: 0 0% 0 11.11111%;
+}
+#toggle {
+    display: block;
+    margin: 5em auto;
+}
+.control-left button,
+.control-right button {
+    display: block;
+    margin: .5em;
+}
+.control-left {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    border: solid #666;
+    border-width: 1px 1px 1px 0;
+    border-radius: 0 .3em .3em 0;
+}
+.control-right {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    border: solid #666;
+    border-width: 1px 0 1px 1px;
+    border-radius: .3em 0 0 .3em ;
+}
+.control-top {
+    position: absolute;
+    left: 45%;
+    top: 0;
+    border: solid #666;
+    border-width: 0 1px 1px;
+    border-radius: 0 0 .3em .3em ;
+}
+.control-bottom {
+    position: absolute;
+    left: 45%;
+    bottom: 0;
+    border: solid #666;
+    border-width: 1px 1px 0;
+    border-radius: .3em .3em 0 0 ;
+}
