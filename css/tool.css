@@ -87,7 +87,8 @@ article > label {
     margin: 0;
 }
 #toggle-code:checked + label + pre {
-    max-height: 21em;
+    max-height: 22em;
+    min-height: 21em;
     margin: 1em 0;
     border-width: 1px;
 }
