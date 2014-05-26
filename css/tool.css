@@ -75,7 +75,7 @@ article + article {
     border-width: 1px 1px 0;
     border-radius: .3em .3em 0 0 ;
 }
-article > pre
+article > pre,
 article > label {
     font-size: .85em;
 }
