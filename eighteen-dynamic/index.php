@@ -15,12 +15,18 @@ $articleAside = file_get_contents('aside.md', FILE_USE_INCLUDE_PATH);
 <style>
 body {
 	margin: 0;
-	padding: 0;
+	padding: 11.1111vh 0 22.2222vh;
 	background-color: #ebebeb;
 	background-image: url(../sketch/complete-octavoformat.svg);
 	background-size: 100% 100vh;
 	background-attachment: fixed;
 	background-position: 0 0;
+	transition: .3s;
+}
+body::after {
+	content:'';
+	display: block;
+	clear: both;
 }
 body:target,
 .flat {
@@ -29,19 +35,26 @@ body:target,
 
 article {
 	float: left;
-	margin: 11.1111vh 0% 22.2222vh 11.11111%;
+	margin: 0 0% 0 11.11111%;
 	width: 33.3333%;
 	box-sizing: border-box;
 	min-height: 66.66666vh;
 	position: relative;
 	transition: .3s;
+	padding: 3em;
+	overflow: hidden;
 }
 article + article {
-	margin: 11.1111vh 0% 22.2222vh 11.11111%;
+	margin: 0 0% 0 11.11111%;
 }
 #toggle {
 	display: block;
 	margin: 5em auto;
+}
+.control-left button,
+.control-right button {
+	display: block;
+	margin: .5em;
 }
 .control-left {
 	position: absolute;
@@ -81,7 +94,7 @@ article + article {
 
 <article id="col-left">
 <?php
-//echo $Parsedown->text($articleMain);
+echo $Parsedown->text($articleMain);
 ?>
 <form action="" class="control control-left">
 	<button name="left" data-for="#col-left" data-direction="left" id="margin-left-min" value="min">←</button>
@@ -92,12 +105,12 @@ article + article {
 	<button name="right" data-for="#col-left" data-direction="right" id="margin-right-plus" value="plus">→</button>
 </form>
 <form action="" class="control control-top">
-	<button name="top" data-for="#col-left" data-direction="top" value="min">↑</button>
-	<button name="top" data-for="#col-left" data-direction="top" value="plus">↓</button>
+	<button name="top" data-for="#g" data-direction="top" value="min">↑</button>
+	<button name="top" data-for="#g" data-direction="top" value="plus">↓</button>
 </form>
 <form action="" class="control control-bottom">
-	<button name="bottom" data-for="#col-left" data-direction="bottom" value="min">↑</button>
-	<button name="bottom" data-for="#col-left" data-direction="bottom" value="plus">↓</button>
+	<button name="bottom" data-for="#g" data-direction="bottom" value="min">↑</button>
+	<button name="bottom" data-for="#g" data-direction="bottom" value="plus">↓</button>
 </form>
 </article>
 <article id="col-right">
@@ -110,12 +123,12 @@ article + article {
 		<button name="right" data-for="#col-right" data-direction="right" value="plus">→</button>
 	</form>
 	<form action="" class="control control-top">
-		<button name="top" data-for="#col-right" data-direction="top" value="min">↑</button>
-		<button name="top" data-for="#col-right" data-direction="top" value="plus">↓</button>
+		<button name="top" data-for="#g" data-direction="top" value="min">↑</button>
+		<button name="top" data-for="#g" data-direction="top" value="plus">↓</button>
 	</form>
 	<form action="" class="control control-bottom">
-		<button name="bottom" data-for="#col-right" data-direction="bottom" value="min">↑</button>
-		<button name="bottom" data-for="#col-right" data-direction="bottom" value="plus">↓</button>
+		<button name="bottom" data-for="#g" data-direction="bottom" value="min">↑</button>
+		<button name="bottom" data-for="#g" data-direction="bottom" value="plus">↓</button>
 	</form>
 <?php
 echo $Parsedown->text($articleAside);
@@ -173,7 +186,7 @@ function adjustSize($this) {
 		ml.style.width = sizesArr.split('+')[1]+'%';
 	}
 	if (direction === 'top') {
-		marginOffset = window.getComputedStyle(ml,null).getPropertyValue("margin-top");
+		marginOffset = window.getComputedStyle(ml,null).getPropertyValue("padding-top");
 		sizeOffset = window.getComputedStyle(ml,null).getPropertyValue("min-height");
 		//console.log(sizeOffset);
 		if (plusmin === 'plus') {
@@ -185,11 +198,11 @@ function adjustSize($this) {
 			var sizeUnit = '1';
 		}
 		sizesArr = returnDimensions(marginOffset,sizeOffset,marginUnit,sizeUnit,vh,11.1111111);
-		ml.style.marginTop = sizesArr.split('+')[0] + 'vh';
-		ml.style.minHeight = sizesArr.split('+')[1] + 'vh';
+		ml.style.paddingTop = sizesArr.split('+')[0] + 'vh';
+		//ml.style.minHeight = sizesArr.split('+')[1] + 'vh';
 	}
 	if (direction === 'bottom') {
-		marginOffset = window.getComputedStyle(ml,null).getPropertyValue("margin-bottom");
+		marginOffset = window.getComputedStyle(ml,null).getPropertyValue("padding-bottom");
 		sizeOffset = window.getComputedStyle(ml,null).getPropertyValue("min-height");
 		//console.log(sizeOffset);
 		if (plusmin === 'plus') {
@@ -201,8 +214,11 @@ function adjustSize($this) {
 			var sizeUnit = '-1';
 		}
 		sizesArr = returnDimensions(marginOffset,sizeOffset,marginUnit,sizeUnit,vh,11.1111111);
-		ml.style.marginBottom = sizesArr.split('+')[0] + 'vh';
-		ml.style.minHeight = sizesArr.split('+')[1] + 'vh';
+		ml.style.paddingBottom = sizesArr.split('+')[0] + 'vh';
+		//ml.style.minHeight = sizesArr.split('+')[1] + 'vh';
+		setTimeout(function(){
+			window.scrollTo( 0, 100000 );
+		}, 300);
 	}
 
 
