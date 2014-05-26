@@ -28,9 +28,11 @@ article {
     transition: .3s;
     padding: 3em;
     overflow: hidden;
+    z-index: 2;
 }
 article + article {
     margin: 0 0% 0 11.11111%;
+    z-index: 1;
 }
 #toggle {
     display: block;
@@ -43,7 +45,7 @@ article + article {
 }
 .control-left {
     position: absolute;
-    top: 45%;
+    top: 8em;
     left: 0;
     border: solid #666;
     border-width: 1px 1px 1px 0;
@@ -51,7 +53,7 @@ article + article {
 }
 .control-right {
     position: absolute;
-    top: 45%;
+    top: 8em;
     right: 0;
     border: solid #666;
     border-width: 1px 0 1px 1px;
