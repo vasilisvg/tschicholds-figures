@@ -8,12 +8,19 @@ body {
     background-position: 0 0;
     transition: .3s;
 }
+.nine body {
+    background-image: url(../sketch/half-octavoformat-a.svg);
+}
+.nine-b body {
+    background-image: url(../sketch/half-octavoformat-b.svg);
+}
 body::after {
     content:'';
     display: block;
     clear: both;
 }
 body:target,
+.nine .flat,
 .flat {
     background: hsla(347,67%,41%,1);
 }
@@ -34,6 +41,14 @@ article + article {
     margin: 0 0% 0 11.11111%;
     z-index: 1;
 }
+
+.nine article {
+    width: 66.6666%
+}
+.nine-b article {
+    margin: 0 0% 0 22.22222%;
+}
+
 #toggle {
     display: block;
     margin: 5em auto;

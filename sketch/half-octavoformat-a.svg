@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1000px" height="1732px" viewBox="0 0 1000 1732" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>half-octavoformat-a</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <rect id="Rectangle-1" stroke="#000000" sketch:type="MSShapeGroup" x="-1000" y="-2" width="2000" height="1732"></rect>
+        <path d="M0.25,-2.00621408 L0.25,1730.50567" id="Line" stroke="#000000" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <polygon id="Triangle-1" stroke="#D0011B" sketch:type="MSShapeGroup" points="0 0 1000 1732 -1000 1732 "></polygon>
+        <polygon id="Triangle-1" stroke="#D0011B" opacity="0.2" sketch:type="MSShapeGroup" transform="translate(0.000000, 866.000000) rotate(-180.000000) translate(-0.000000, -866.000000) " points="0 0 1000 1732 -1000 1732 "></polygon>
+        <path d="M999.758687,-2.027663 L-1000.076,1730.09599" id="Line" stroke="#BD0FE1" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M333.253413,-2.04423009 L333.548407,1730.35622" id="Line" stroke="#000000" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M111.112297,0.470873786 L111.012297,1731.58585" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M444.478928,0.470873786 L444.752284,1731.58585" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M555.405487,0.470873786 L555.222713,1731.58585" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M665.683213,0.470873786 L666.722277,1731.58585" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M777.445754,0.470873786 L777.445754,1731.58585" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M888.445754,0.352835973 L888.445754,1731.46781" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M-1000,192.30024 L1000,192.30024" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M-1000,385.20024 L1000,385.100291" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M-1000,577.362205 L1000,577.362205" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M-1000,769.796366 L1000,769.962412" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M-1000,961.570924 L1000,961.570924" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M-1000,1154.57092 L1000,1154.57092" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M-1000,1346.57092 L1000,1346.57092" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M-1000,1539.57092 L1000,1539.57092" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M222.181904,0.470873786 L222.181904,1731.58585" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M-1000.2439,-2.02801977 L1000.11406,1730.07089" id="Line" stroke="#BD0FE1" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M333.016894,0.0121767816 L-333.331041,577.490798" id="Line" stroke="#000000" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M333.016894,577.489139 L-333.331041,0.489139276" id="Line" stroke="#000000" stroke-linecap="square" opacity="0.2" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

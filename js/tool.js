@@ -14,7 +14,12 @@ function adjustSize($this) {
     var ml = document.querySelector($this.getAttribute('data-for'));
     var direction = $this.getAttribute('data-direction');
     var plusmin = $this.value;
-
+    if(document.querySelector('html.nine')) {
+        var factor = 11.1111;
+    }
+    else {
+        var factor = 5.5555;
+    }
     // set the variables
     if (direction === 'left') {
         marginOffset = window.getComputedStyle(ml,null).getPropertyValue("margin-left");
@@ -27,7 +32,8 @@ function adjustSize($this) {
             var marginUnit = '-1';
             var sizeUnit = '1';
         }
-        sizesArr = returnDimensions(marginOffset,sizeOffset,marginUnit,sizeUnit,vw,5.5555);
+
+        sizesArr = returnDimensions(marginOffset,sizeOffset,marginUnit,sizeUnit,vw,factor);
         ml.style.marginLeft = sizesArr.split('+')[0]+'%';
         ml.style.width = sizesArr.split('+')[1]+'%';
 
@@ -45,7 +51,7 @@ function adjustSize($this) {
             var marginUnit = '1';
             var sizeUnit = '-1';
         }
-        sizesArr = returnDimensions(marginOffset,sizeOffset,marginUnit,sizeUnit,vw,5.5555555);
+        sizesArr = returnDimensions(marginOffset,sizeOffset,marginUnit,sizeUnit,vw,factor);
         ml.style.marginRight = sizesArr.split('+')[0]+'%';
         ml.style.width = sizesArr.split('+')[1]+'%';
 
