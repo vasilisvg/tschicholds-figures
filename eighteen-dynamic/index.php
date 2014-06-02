@@ -33,9 +33,12 @@ article + article {
 	width: <span id="col-right-width">33.333%</span>;
 }
 </code></pre>
+<div contenteditable>
 <?php
 echo $Parsedown->text($articleMain);
 ?>
+	
+</div>
 <form action="" class="control control-left">
 	<button name="left" data-for="#col-left" data-direction="left" id="margin-left-min" value="min">←</button>
 	<button name="left" data-for="#col-left" data-direction="left" id="margin-left-plus" value="plus">→</button>
