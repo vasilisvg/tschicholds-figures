@@ -21,11 +21,12 @@ $articleMain = file_get_contents('article.md', FILE_USE_INCLUDE_PATH);
 body {
     margin: 0;
     padding: 11.1111vh 22.2222vw 22.2222vh 11.1111vw;
-    background-color: #ebebeb;
+    background-color: white;
     background-image: url(../sketch/half-octavoformat-a.svg);
     background-size: 100% 100vh;
     background-attachment: fixed;
     background-position: 0 0;
+    transition: 0;
 }
 body:target, .nine .flat, .flat {
     background: white;
@@ -46,10 +47,7 @@ article {
 @media (min-aspect-ratio: 1/1) {
     body {
         padding: 11.1111vh 11.1111vw 22.2222vh;
-        background-color: #ebebeb;
         background-image: url(../sketch/complete-octavoformat.svg);
-        background-size: 100% 100vh;
-        background-attachment: fixed;
         background-position: 0 0;
     }
     article {
@@ -59,7 +57,9 @@ article {
         -webkit-column-gap: 11.1111vw;
         -moz-column-gap: 11.1111vw;
         column-gap: 11.1111vw;
+        -webkit-column-rule: 1px solid blue;
         -moz-column-rule: 1px solid blue;
+        column-rule: 1px solid blue;
     }
     p + p {
         margin: 1em 0;
