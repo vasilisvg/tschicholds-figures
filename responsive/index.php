@@ -26,13 +26,12 @@ body {
     background-size: 100% 100vh;
     background-attachment: fixed;
     background-position: 0 0;
-    transition: 0;
+    transition: 0s;
 }
 body:target, .nine .flat, .flat {
     background: white;
 }
 article {
-    min-height: 66.6666vh;
     padding: 0;
     width: auto;
     margin: 0;
@@ -51,9 +50,10 @@ article {
         background-position: 0 0;
     }
     article {
-        -webkit-columns: 2;
-        -moz-columns: 2;
-        columns: 2;
+        min-height: 66.6666vh;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
         -webkit-column-gap: 11.1111vw;
         -moz-column-gap: 11.1111vw;
         column-gap: 11.1111vw;
@@ -64,6 +64,11 @@ article {
     p + p {
         margin: 1em 0;
         text-indent: 0;
+    }
+}
+@media (max-height:35em) {
+    article {
+        min-height: inherit;
     }
 }
  </style>
