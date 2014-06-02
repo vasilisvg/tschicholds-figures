@@ -52,6 +52,7 @@ strong {
 code, pre, kbd {
     font-family: "Fedra Mono Screen Regular";
     font-weight: normal !important;
+    font-style: normal !important;
 }
 p > code, kbd, pre {
     border: 1px solid hsl(0, 0%, 87%);
