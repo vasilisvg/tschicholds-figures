@@ -1,8 +1,8 @@
 <!doctype html>
 <?php
-include '../includes/parsedown/Parsedown.php';
-$Parsedown = new Parsedown();
-$articleMain = file_get_contents('article.md', FILE_USE_INCLUDE_PATH);
+//include '../includes/parsedown/Parsedown.php';
+//$Parsedown = new Parsedown();
+//$articleMain = file_get_contents('article.md', FILE_USE_INCLUDE_PATH);
 ?>
 <html lang="en">
 <head>
@@ -78,7 +78,7 @@ article {
 
 <article>
     <?php
-    echo $Parsedown->text($articleMain);
+    //echo $Parsedown->text($articleMain);
     include '../includes/toggleform.php';
     ?>
 </article>
